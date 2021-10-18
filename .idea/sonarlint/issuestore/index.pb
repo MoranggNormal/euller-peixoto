@@ -13,9 +13,6 @@ A
 browserconfig.xml,1\3\131a39dc8192b69ab21131084e9834892e745525
 @
 site.webmanifest,8\6\868bac26f4a0e9278ed929c78cf7bec5af3dcd0e
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 9
 	.htaccess,f\1\f14dd8fe84b7e99eb63debbf029152463832e7ad
 :
