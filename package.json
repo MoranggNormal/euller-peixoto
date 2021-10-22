@@ -1,15 +1,13 @@
 {
-  "name": " ",
+  "name": "EullerPeixoto",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "author": "Euller Peixoto",
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
+    "dev": "parcel index.html --open sass",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
@@ -20,5 +18,8 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "2.4.1"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }
