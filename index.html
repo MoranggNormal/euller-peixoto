@@ -1,41 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sideDesktop.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<body>
+    <meta name="theme-color" content="#F7F7F7" />
+  </head>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <body>
+    <aside class="isDesktop">
+      <header>
+        <h1>Euller Peixoto</h1>
+      </header>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+      <nav>
+        <div class="container">
+          <ul>
+            <li class="home active">
+              <a href="#home"
+                ><i class="material-icons">home</i><small>Home</small></a
+              >
+            </li>
+            <li class="about">
+              <a href="#about"
+                ><i class="material-icons">person</i><small>About</small></a
+              >
+            </li>
+            <li class="service">
+              <a href="#service"
+                ><i class="material-icons">check_circle</i
+                ><small>Service</small></a
+              >
+            </li>
+            <li class="projects">
+              <a href="#projects"
+                ><i class="material-icons">code</i><small>Projects</small></a
+              >
+            </li>
+            <li class="contact">
+              <a href="#contact"
+                ><i class="material-icons">contacts </i
+                ><small>Contacts</small></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <div class="email">
+        <div class="pic">
+          <img
+            src="https://avatars.githubusercontent.com/u/72574532?v=4"
+            alt="Euller Peixoto"
+          />
+        </div>
+        <div class="info">
+          <div></div>
+          <h3>Contato</h3>
+          <p>peixtoeuller500@gmail.com</p>
+        </div>
+      </div>
+    </aside>
+
+    <section id="home">
+      <h1>This is my home page</h1>
+    </section>
+
+    <section id="about">
+      <h1>You can read about me here</h1>
+    </section>
+
+    <section id="service">
+      <h1>Wanna Contact me just <u>click here</u></h1>
+    </section>
+
+    <section id="projects">
+      <h1>This page created in 2021</h1>
+    </section>
+    <section id="contact">
+      <h1>This page created in 2021</h1>
+    </section>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
