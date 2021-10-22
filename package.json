@@ -4,7 +4,7 @@
   "author": "Euller Peixoto",
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html --open sass",
+    "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w scss/ -o css/ --recursive"
