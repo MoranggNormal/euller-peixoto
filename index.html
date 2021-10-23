@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sideDesktop.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,10 +27,7 @@
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/ce5c5dbd43.js" crossorigin="anonymous"></script>
 
     <meta name="theme-color" content="#F7F7F7" />
   </head>
@@ -36,7 +35,7 @@
   <body>
     <aside class="isDesktop">
       <header>
-        <h1>Euller Peixoto</h1>
+        <h2>Euller Peixoto</h2>
       </header>
 
       <nav>
@@ -44,29 +43,27 @@
           <ul>
             <li class="home active">
               <a href="#home"
-                ><i class="material-icons">home</i><small>Home</small></a
+                ><i class="fas fa-home"></i><small>Home</small></a
               >
             </li>
             <li class="about">
               <a href="#about"
-                ><i class="material-icons">person</i><small>About</small></a
+                ><i class="fas fa-user-check"></i><small>About</small></a
               >
             </li>
             <li class="service">
               <a href="#service"
-                ><i class="material-icons">check_circle</i
-                ><small>Service</small></a
+                ><i class="fas fa-bullhorn"></i><small>Service</small></a
               >
             </li>
             <li class="projects">
               <a href="#projects"
-                ><i class="material-icons">code</i><small>Projects</small></a
+                ><i class="fas fa-code"></i><small>Projects</small></a
               >
             </li>
             <li class="contact">
               <a href="#contact"
-                ><i class="material-icons">contacts </i
-                ><small>Contacts</small></a
+                ><i class="fas fa-id-card"></i><small>Contacts</small></a
               >
             </li>
           </ul>
@@ -81,31 +78,111 @@
           />
         </div>
         <div class="info">
-          <div></div>
           <h3>Contato</h3>
           <p>peixtoeuller500@gmail.com</p>
         </div>
       </div>
     </aside>
 
-    <section id="home">
-      <h1>This is my home page</h1>
-    </section>
+    <main>
+      <section id="home">
 
-    <section id="about">
-      <h1>You can read about me here</h1>
-    </section>
+        <div class="main-pic">
+          <img src="https://avatars.githubusercontent.com/u/72574532?v=4" alt="Euller Peixoto"/>
+        </div>
 
-    <section id="service">
-      <h1>Wanna Contact me just <u>click here</u></h1>
-    </section>
+        <h1>Euller Peixoto</h1>
 
-    <section id="projects">
-      <h1>This page created in 2021</h1>
-    </section>
-    <section id="contact">
-      <h1>This page created in 2021</h1>
-    </section>
+        <h4>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+          cupiditate, temporibus, labore similique id a ducimus minima velit
+          iusto libero alias. Quidem aspernatur explicabo inventore suscipit
+          voluptatibus libero blanditiis dolorem?
+        </h4>
+
+        <div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-whatsapp-square"></i>
+
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </nav>
+      </div>
+
+      <a class="download-cv" href="">Download CV</a>
+
+        </ul>
+      </section>
+
+      <section id="about">
+
+        <div class="container">
+
+          <div class="text-area">
+
+        <div class="title">
+        <h4>About Me</h4>
+      </div>
+
+      <div class="subtitle">
+        <h5>Hi, I'm <span>EullerPeixoto</span></h5>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex mollitia labore corporis facere nobis quibusdam dolore maxime eveniet ea laudantium atque nam, id officia, iure vero illum veritatis odio numquam.</p>
+
+      </div>
+
+      <div class="subtitle">
+        <h5>What are my skills</h5>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, dolorem accusamus dolorum obcaecati nemo blanditiis nisi quidem eaque alias vel, nobis vitae animi ipsa modi dicta debitis assumenda? Placeat, adipisci!</p>
+      </div>
+
+      <div class="skills">
+        <ul>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>React</li>
+          <li>Next</li>
+        </ul>
+
+        <ul>
+          <li>Material UI</li>
+          <li>SASS</li>
+          <li>Axios</li>
+          <li>Git</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="img-area">
+      <div>
+        <img src="https://avatars.githubusercontent.com/u/72574532?v=4" alt="Euller Peixoto">
+      </div>
+    </div>
+
+    </div>
+      </section>
+
+      
+    </main>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
