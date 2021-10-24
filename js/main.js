@@ -6,7 +6,8 @@ window.onscroll = () => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (scrollY >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
+      current = section.getAttribute("id");
+    }
   });
 
   navLi.forEach((li) => {
@@ -16,3 +17,4 @@ window.onscroll = () => {
     }
   });
 };
+

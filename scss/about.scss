@@ -38,7 +38,6 @@
       .skills {
         width: 100%;
         display: flex;
-        justify-content: space-around;
 
         ul {
           list-style: none;
@@ -48,18 +47,10 @@
             font-size: 1.4em;
             font-weight: 400;
             color: #1a1a1a;
-            position: relative;
-            z-index: 99;
 
-            &::after {
-              content: "";
-              width: 0.6em;
-              height: 0.5em;
-              background-color: #34495e34;
-              position: absolute;
-              z-index: -99;
-              top: 0.7em;
-              left: -0.1em;
+            img{
+              width: 32px;
+              margin-right: 0.5em;
             }
           }
         }
@@ -68,6 +59,7 @@
 
     .img-area {
       width: 50%;
+      height: 100%;
       display: grid;
       place-items: center;
 
