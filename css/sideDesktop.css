@@ -6,6 +6,9 @@
   top: 0;
   left: 0;
   background-color: #fff; }
+  @media screen and (max-width: 1000px) {
+    .isDesktop {
+      display: none; } }
   .isDesktop header {
     width: 100%;
     height: 15%;

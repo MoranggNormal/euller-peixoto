@@ -27,11 +27,19 @@
           font-size: 1.4em;
           font-weight: 500;
           color: #1a1a1a;
+
+          @media screen and (max-width: 1000px) {
+            margin-top: 1.1em;
+           }
         }
 
         p {
           font-size: 1.2em;
           font-weight: 300;
+
+          @media screen and (max-width: 1000px) {
+            margin-top: 1.1em;
+           }
         }
       }
 
@@ -52,8 +60,22 @@
               width: 32px;
               margin-right: 0.5em;
             }
+
+
+            @media screen and (max-width: 400px) {
+              font-size: 1.1em;
+             }
           }
+
+          @media screen and (max-width: 1000px) {
+            margin-top: 1.2em;
+           }
+
         }
+      }
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
       }
     }
 
@@ -70,8 +92,21 @@
 
         img {
           width: 100%;
+          
         }
       }
+
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 100%;
+      height: 100%;
+      flex-flow: column wrap;
+      padding: 0.9em;
+      margin-top: 0.9em;
     }
   }
 }
