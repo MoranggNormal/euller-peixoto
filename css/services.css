@@ -1,0 +1,29 @@
+#services {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #f5f8fc; }
+  #services .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap; }
+    #services .container .text-area {
+      width: 100%; }
+      #services .container .text-area .title {
+        font-weight: 700;
+        font-size: 2.4em;
+        color: #1a1a1a; }
+      #services .container .text-area .text {
+        margin-top: 2.5em;
+        line-height: 1.7; }
+    #services .container .cards {
+      display: flex;
+      justify-content: space-around;
+      gap: 1.8em;
+      margin-top: 2.8em; }
+      #services .container .cards .card {
+        width: 27%;
+        height: 20em;
+        background-color: #006dfc; }
