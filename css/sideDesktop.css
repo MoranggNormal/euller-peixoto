@@ -51,6 +51,8 @@
             font-weight: 400;
             font-size: 1.3em;
             color: #1a1a1a; }
+            .isDesktop nav .container ul li a img {
+              width: 1em; }
             .isDesktop nav .container ul li a small {
               margin-left: 1.6em; }
             .isDesktop nav .container ul li a:hover {
