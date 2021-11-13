@@ -3,10 +3,8 @@ const followCursor = document.querySelector(".cursor-follow");
 
 
 document.addEventListener("mousemove", (e) => {
-  let x = e.screenX;
-  let y = e.screenY - 80;
-
-  console.log(e);
+  let x = e.clientX;
+  let y = e.clientY;
 
   followCursor.style.top = y + "px";
   followCursor.style.left = x + "px";
@@ -17,7 +15,6 @@ document.addEventListener("mousemove", (e) => {
   if (e.target.className.includes('hoverable')) {
       mainCursor.style.width = '3.9em'
       mainCursor.style.height = '3.9em'
-      console.log('hey');
   }else{
       mainCursor.style.width = '2.9em'
       mainCursor.style.height = '2.9em'
