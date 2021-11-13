@@ -63,13 +63,18 @@
       padding: 0.6em 2.4em;
       border: 1px solid #7e7e7e;
       color: #1a111a;
+      font-weight: 500;
       border-radius: 9999px;
       text-decoration: none;
+      z-index: 100;
+      transition: 0.3s;
 
       &:hover{
           background-color: #1a111a;
-          color: #7e7e7e;
-          margin-top: 0.9em;
+          color: #aaaaaa;
+          transform: translate(0%, -10%);
+          box-shadow: 0 0 10px rgba(19, 19, 19, 0.185);
+
       }
   }
 }

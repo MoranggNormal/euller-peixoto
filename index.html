@@ -20,7 +20,7 @@
       content="Procurando alguém disposto a entrar em novos mundos afim de obter conhecimento, sempre disponível à novas experiências? Bem, você encontrou!"
     />
     <meta property="”og:site_name”" content="Euller Peixoto" />
-    <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index,cursor" />
     <meta
       name="keywords"
       content="euller, euller peixoto, peixoto euller, euller site, euller peixoto site, euller peixoto website, pagina de euller, pagina de euller peixoto, euller portfolio, euller peixoto portfolio"
@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/cursor.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -71,6 +72,11 @@
   </head>
 
   <body>
+
+    <div class="cursor-main"></div>
+    <div class="cursor-follow"></div>
+
+
     <aside class="isDesktop">
       <header>
         <h2>Euller Peixoto</h2>
@@ -79,30 +85,30 @@
       <nav>
         <div class="container">
           <ul>
-            <li class="home active">
-              <a href="#home">
+            <li class="home active hoverable">
+              <a class="hoverable" href="#home">
                 <img src="./img/home.svg" alt="Home" /> <small>Home</small></a
               >
             </li>
             <li class="about">
-              <a href="#about">
+              <a class="hoverable" href="#about">
                 <img src="./img/about.svg" alt="About" />
                 <small>About</small></a
               >
             </li>
             <li class="services">
-              <a href="#services">
+              <a class="hoverable" href="#services">
                 <img src="./img/services.svg" alt="" />
                 <small>Services</small></a
               >
             </li>
             <li class="projects">
-              <a href="#projects">
+              <a class="hoverable" href="#projects">
                 <img src="./img/code.svg" alt="" /> <small>Projects</small></a
               >
             </li>
             <li class="contact">
-              <a href="#contact">
+              <a class="hoverable" href="#contact">
                 <img src="./img/contact.svg" alt="" />
                 <small>Contacts</small></a
               >
@@ -170,7 +176,7 @@
           </nav>
         </div>
 
-        <a class="download-cv after-3" href="">Download CV</a>
+        <a class="download-cv after-3 hoverable" href="">Download CV</a>
       </section>
 
       <section id="about">
@@ -275,6 +281,7 @@
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cursorEffect.js"></script>
 
     <script>
       ScrollReveal().reveal(".main-pic");
@@ -284,5 +291,6 @@
       ScrollReveal().reveal(".after-3", { delay: 550 });
       ScrollReveal().reveal(".after-4", { delay: 600 });
     </script>
+
   </body>
 </html>

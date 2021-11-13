@@ -25,12 +25,15 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   background-color: #fff;
   width: 100vw;
+  position: absolute;
   display: flex;
   flex-flow: row wrap;
   overflow-x: hidden;
+  cursor: none;
 }
 
 main{

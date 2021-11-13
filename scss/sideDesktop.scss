@@ -31,11 +31,13 @@
     height: 70%;
     border-bottom: 1px solid rgba(46, 46, 46, 0.178);
 
+
     .container {
       width: 100%;
       height: 100%;
       display: grid;
       place-items: center;
+
 
       ul {
         width: 85%;
@@ -43,10 +45,13 @@
         display: grid;
         place-items: center;
         list-style: none;
+      z-index: 1000;
+
 
         li {
           width: 90%;
           cursor: pointer;
+          
 
           a {
             width: 100%;
@@ -62,6 +67,7 @@
             font-weight: 400;
             font-size: 1.3em;
             color: #1a1a1a;
+            
 
               img{
                 width: 1em;

@@ -34,7 +34,8 @@
         height: 80%;
         display: grid;
         place-items: center;
-        list-style: none; }
+        list-style: none;
+        z-index: 1000; }
         .isDesktop nav .container ul li {
           width: 90%;
           cursor: pointer; }
