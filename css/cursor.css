@@ -1,26 +1,20 @@
-.cursor-follow {
+.cursor {
   z-index: 999;
   position: fixed;
+  border-radius: 50%;
+  transform: translate(-50%, -50%); }
+  @media screen and (max-width: 1000px) {
+    .cursor {
+      display: none; } }
+
+.cursor-follow {
   background: #1a1a1a;
   width: 0.6em;
   height: 0.6em;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%); }
-  @media screen and (max-width: 1000px) {
-    .cursor-follow {
-      display: none; } }
+  pointer-events: none; }
 
 .cursor-main {
-  z-index: 999;
-  position: fixed;
   background: #9e9d9d;
   box-shadow: 0 0 10px #9e9d9d, 0 0 60px #9e9d9d, 0 0 15px #9e9d9d;
   opacity: 0.3;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
   transition: 0.3s; }
-  @media screen and (max-width: 1000px) {
-    .cursor-main {
-      display: none; } }
