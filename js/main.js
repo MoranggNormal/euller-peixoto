@@ -1,5 +1,7 @@
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
+
+
 window.onscroll = () => {
   let current = "";
 
@@ -18,3 +20,14 @@ window.onscroll = () => {
   });
 };
 
+const menu = document.querySelector('.isDesktop')
+const toggleMenu = document.querySelector('.toggle-menu')
+
+toggleMenu.addEventListener('click', () => {
+  toggleMenu.classList.toggle('menu-open')
+  menu.classList.toggle('show-menu')
+
+  sections.forEach((e) => {
+    e.classList.toggle('blur')
+  })
+})
