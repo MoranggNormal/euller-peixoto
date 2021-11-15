@@ -9,11 +9,16 @@
 
   .main-pic {
     width: 20%;
-    border-radius: 30% 70% 45% 55% / 52% 22% 78% 48%;
     overflow: hidden;
+    transition: 2.5s;
+    box-shadow: 0 0 80px 120px rgba(19, 19, 19, 0.055);
+    border: 1px solid rgba(19, 19, 19, 0.164);
+    border-radius: 40% 30% 22% 64% / 53% 91% 27% 45%;
+
 
     img {
       width: 100%;
+
     }
     
   @media screen and (max-width: 1000px) {
