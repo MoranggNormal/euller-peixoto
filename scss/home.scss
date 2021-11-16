@@ -15,15 +15,13 @@
     border: 1px solid rgba(19, 19, 19, 0.164);
     border-radius: 40% 30% 22% 64% / 53% 91% 27% 45%;
 
-
     img {
       width: 100%;
-
     }
-    
-  @media screen and (max-width: 1000px) {
-    width: 40%;
-  }
+
+    @media screen and (max-width: 1000px) {
+      width: 40%;
+    }
   }
 
   h1 {
@@ -32,39 +30,44 @@
     margin-top: 1em;
   }
 
-  h4 {
-    max-width: 60%;
-    font-weight: 400;
-    font-size: 1.1664em;
-    line-height: 1.553em;
-    margin-top: 0.944em;
+  .content {
 
-    @media screen and (max-width: 900px) {
-      max-width: 90%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    h4 {
+      max-width: 60%;
+      font-weight: 400;
+      font-size: 1.1664em;
+      line-height: 1.553em;
+      margin-top: 0.944em;
+
+      @media screen and (max-width: 900px) {
+        max-width: 90%;
+      }
     }
-  }
 
-  nav {
+    nav {
+      margin-top: 1em;
 
-    margin-top: 1em;
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 0.455em;
+        font-size: 1.5334em;
 
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 0.455em;
-      font-size: 1.5334em;
-
-      li {
-        a {
-          color: #7e7e7e;
+        li {
+          a {
+            color: #7e7e7e;
+          }
         }
       }
     }
-  }
 
-  .download-cv{
+    .download-cv {
       font-size: 1.2em;
-      margin-top: 1em;
+      margin-top: 1m;
       padding: 0.6em 2.4em;
       border: 1px solid #7e7e7e;
       color: #1a111a;
@@ -74,12 +77,12 @@
       z-index: 999;
       transition: 0.3s;
 
-      &:hover{
-          background-color: #1a111a;
-          color: #aaaaaa;
-          transform: translate(0%, -10%);
-          box-shadow: 0 0 10px rgba(19, 19, 19, 0.185);
-
+      &:hover {
+        background-color: #1a111a;
+        color: #aaaaaa;
+        transform: translate(0%, -10%);
+        box-shadow: 0 0 10px rgba(19, 19, 19, 0.185);
       }
+    }
   }
 }
