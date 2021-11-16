@@ -19,4 +19,4 @@ setInterval(() => {
     30,
     80
   )}% ${randomIntFromInterval(20, 100)}%`;
-}, 2500);
+}, 2100);

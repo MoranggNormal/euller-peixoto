@@ -34,12 +34,12 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" type="image/svg" href="/assets/img/favicon.svg"/>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/sideDesktop.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/about.css" />
-    <link rel="stylesheet" href="assets/css/services.css" />
-    <link rel="stylesheet" href="assets/css/cursor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sideDesktop.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/cursor.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -62,6 +62,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <meta name="theme-color" content="#F7F7F7" />
   </head>
@@ -137,8 +140,9 @@
     <main>
       <section id="home">
 
-        <div class="main-pic">
+        <div class="main-pic" data-aos="fade-down">
           <img
+            
             src="https://avatars.githubusercontent.com/u/72574532?v=4"
             alt="Euller Peixoto"
           />
@@ -288,6 +292,9 @@
     <script src="assets/js/cursorEffect.js"></script>
     <script src="assets/js/randomBorder.js"></script>
 
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
