@@ -2,8 +2,8 @@
   z-index: 999;
   position: fixed;
   background: #1a1a1a;
-  width: 0.6em;
-  height: 0.6em;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%); }
