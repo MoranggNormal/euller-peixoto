@@ -9,14 +9,14 @@ setInterval(() => {
   img.style.borderRadius = `${randomIntFromInterval(
     30,
     80
-  )}% ${randomIntFromInterval(20, 100)}% ${randomIntFromInterval(
+  )}% ${randomIntFromInterval(40, 100)}% ${randomIntFromInterval(
     30,
     80
-  )}% ${randomIntFromInterval(20, 100)}% / ${randomIntFromInterval(
+  )}% ${randomIntFromInterval(40, 100)}% / ${randomIntFromInterval(
     30,
     80
-  )}% ${randomIntFromInterval(20, 100)}% ${randomIntFromInterval(
+  )}% ${randomIntFromInterval(40, 100)}% ${randomIntFromInterval(
     30,
     80
-  )}% ${randomIntFromInterval(20, 100)}%`;
+  )}% ${randomIntFromInterval(40, 100)}%`;
 }, 2100);
