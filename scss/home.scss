@@ -41,7 +41,7 @@
       font-weight: 400;
       font-size: 1.1664em;
       line-height: 1.553em;
-      margin-top: 0.944em;
+      margin-top: 0.844em;
 
       @media screen and (max-width: 900px) {
         max-width: 90%;
@@ -58,8 +58,21 @@
         font-size: 1.5334em;
 
         li {
+          margin-bottom: 0.4em;
+          padding: 0.2em;
+
           a {
-            color: #7e7e7e;
+
+            img{
+            transition: 0.2s;
+
+              width: 1em;
+              height: 1em;
+
+              &:hover{
+                transform: scale(1.4);
+              }
+            }
           }
         }
       }

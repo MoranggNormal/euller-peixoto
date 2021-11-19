@@ -31,7 +31,7 @@
       font-weight: 400;
       font-size: 1.1664em;
       line-height: 1.553em;
-      margin-top: 0.944em; }
+      margin-top: 0.844em; }
       @media screen and (max-width: 900px) {
         #home .content h4 {
           max-width: 90%; } }
@@ -42,8 +42,15 @@
         display: flex;
         gap: 0.455em;
         font-size: 1.5334em; }
-        #home .content nav ul li a {
-          color: #7e7e7e; }
+        #home .content nav ul li {
+          margin-bottom: 0.4em;
+          padding: 0.2em; }
+          #home .content nav ul li a img {
+            transition: 0.2s;
+            width: 1em;
+            height: 1em; }
+            #home .content nav ul li a img:hover {
+              transform: scale(1.4); }
     #home .content .download-cv {
       font-size: 1.2em;
       margin-top: 1m;
