@@ -63,6 +63,8 @@
 
           a {
 
+            
+
             img{
             transition: 0.2s;
 
@@ -73,6 +75,11 @@
                 transform: scale(1.4);
               }
             }
+          }
+
+          &:nth-child(4){
+            transform: scale(1.4);
+
           }
         }
       }
