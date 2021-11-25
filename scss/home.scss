@@ -1,3 +1,6 @@
+@import 'mediaQueries';
+@import 'typography';
+
 #home {
   width: 100%;
   height: 100vh;
@@ -19,15 +22,15 @@
       width: 100%;
     }
 
-    @media screen and (max-width: 1000px) {
+    @include screen(max-width, med){
       width: 40%;
     }
   }
 
-  h1 {
+  h2 {
     color: #1a111a;
-    font-size: 2.5557em;
     margin-top: 1em;
+    @include main;
   }
 
   .content {
@@ -36,16 +39,15 @@
     display: grid;
     place-items: center;
 
-    h4 {
+    h3 {
       max-width: 60%;
-      font-weight: 400;
-      font-size: 1.1664em;
-      line-height: 1.553em;
+      line-height: 1.253em;
       margin-top: 0.844em;
+      @include subtitle;
 
-      @media screen and (max-width: 900px) {
-        max-width: 90%;
-      }
+    @include screen(max-width, med-small){
+      max-width: 85%;
+    }
     }
 
     nav {
@@ -55,14 +57,13 @@
         list-style: none;
         display: flex;
         gap: 0.455em;
-        font-size: 1.5334em;
 
         li {
           margin-bottom: 0.4em;
           padding: 0.2em;
 
           a {
-
+            font-size: 0.1em;
             
 
             img{
@@ -86,16 +87,15 @@
     }
 
     .download-cv {
-      font-size: 1.2em;
       margin-top: 1m;
       padding: 0.6em 2.4em;
       border: 1px solid #7e7e7e;
       color: #1a111a;
-      font-weight: 500;
       border-radius: 9999px;
       text-decoration: none;
       z-index: 999;
       transition: 0.3s;
+      @include text-med;
 
       &:hover {
         background-color: #1a111a;

@@ -15,55 +15,60 @@
     border-radius: 40% 30% 22% 64% / 53% 91% 27% 45%; }
     #home .main-pic img {
       width: 100%; }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 992px) {
       #home .main-pic {
         width: 40%; } }
-  #home h1 {
+  #home h2 {
     color: #1a111a;
-    font-size: 2.5557em;
-    margin-top: 1em; }
+    margin-top: 1em;
+    font-size: 35px;
+    font-size: 2.1875rem;
+    font-weight: 700; }
   #home .content {
     width: 100%;
     display: grid;
     place-items: center; }
-    #home .content h4 {
+    #home .content h3 {
       max-width: 60%;
-      font-weight: 400;
-      font-size: 1.1664em;
-      line-height: 1.553em;
-      margin-top: 0.844em; }
-      @media screen and (max-width: 900px) {
-        #home .content h4 {
-          max-width: 90%; } }
+      line-height: 1.253em;
+      margin-top: 0.844em;
+      font-size: 21px;
+      font-size: 1.3125rem;
+      font-weight: 400; }
+      @media screen and (max-width: 768px) {
+        #home .content h3 {
+          max-width: 85%; } }
     #home .content nav {
       margin-top: 1em; }
       #home .content nav ul {
         list-style: none;
         display: flex;
-        gap: 0.455em;
-        font-size: 1.5334em; }
+        gap: 0.455em; }
         #home .content nav ul li {
           margin-bottom: 0.4em;
           padding: 0.2em; }
-          #home .content nav ul li a img {
-            transition: 0.2s;
-            width: 1em;
-            height: 1em; }
-            #home .content nav ul li a img:hover {
-              transform: scale(1.4); }
+          #home .content nav ul li a {
+            font-size: 0.1em; }
+            #home .content nav ul li a img {
+              transition: 0.2s;
+              width: 1em;
+              height: 1em; }
+              #home .content nav ul li a img:hover {
+                transform: scale(1.4); }
           #home .content nav ul li:nth-child(4) {
             transform: scale(1.4); }
     #home .content .download-cv {
-      font-size: 1.2em;
       margin-top: 1m;
       padding: 0.6em 2.4em;
       border: 1px solid #7e7e7e;
       color: #1a111a;
-      font-weight: 500;
       border-radius: 9999px;
       text-decoration: none;
       z-index: 999;
-      transition: 0.3s; }
+      transition: 0.3s;
+      font-size: 17px;
+      font-size: 1.0625rem;
+      font-weight: 500; }
       #home .content .download-cv:hover {
         background-color: #1a111a;
         color: #aaaaaa;
