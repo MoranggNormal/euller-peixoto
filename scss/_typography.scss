@@ -1,0 +1,35 @@
+@function calculateRem($size){
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin main{
+    @include font-size(35px);
+    font-weight: 700
+}
+
+@mixin title{
+    @include font-size(27px);
+    font-weight: 700;
+}
+
+@mixin subtitle{
+    @include font-size(21px);
+    font-weight: 400;
+}
+
+@mixin text-med{
+    @include font-size(17px);
+    font-weight: 500;
+}
+
+@mixin text{
+    @include font-size(16px);
+    font-weight: 300;
+    line-height: 1.38em;
+}
