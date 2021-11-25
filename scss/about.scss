@@ -1,5 +1,5 @@
 @import "mediaQueries";
-@import 'typography';
+@import "typography";
 
 #about {
   width: 100%;
@@ -8,13 +8,17 @@
   place-items: center;
 
   .container {
-    width: 90%;
-    height: 90%;
+ 
+    width: 100%;
+    height: 100%;
+    flex-flow: column wrap;
+    padding: 0.9em;
+    margin-top: 0.9em;
     display: flex;
     flex-flow: row nowrap;
 
     .text-area {
-      width: 50%;
+      width: 100%;
 
       display: flex;
       flex-flow: column wrap;
@@ -30,7 +34,7 @@
           color: #1a1a1a;
           @include subtitle;
 
-          @include screen(max-width, med) {
+          @include screen(md) {
             margin-top: 1.1em;
           }
         }
@@ -39,7 +43,7 @@
           font-weight: 300;
           @include text;
 
-          @include screen(max-width, med) {
+          @include screen(md) {
             margin-top: 1.1em;
           }
         }
@@ -61,24 +65,23 @@
               width: 32px;
               margin-right: 0.5em;
             }
-
           }
 
-          @include screen(max-width, med) {
+          @include screen(md) {
             margin-top: 1.1em;
           }
         }
       }
 
-      @include screen(max-width, med) {
-        width: 100%;
+      @include screen(lg) {
+        width: 50%;
       }
     }
 
     .img-area {
       width: 50%;
       height: 100%;
-      display: grid;
+      display: none;
       place-items: center;
 
       div {
@@ -91,17 +94,15 @@
         }
       }
 
-      @include screen(max-width, med) {
-        display: none;
+   
+      @include screen(lg) {
+        display: grid;
       }
     }
 
-    @include screen(max-width, med) {
-      width: 100%;
-      height: 100%;
-      flex-flow: column wrap;
-      padding: 0.9em;
-      margin-top: 0.9em;
+    @include screen(lg) {
+      width: 90%;
+      height: 90%;
     }
   }
 }

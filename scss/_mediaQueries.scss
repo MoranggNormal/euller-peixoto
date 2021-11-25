@@ -1,26 +1,19 @@
-$breakpoint_small: 767px;
-$breakpoint_med-small: 768px;
-$breakpoint_med: 992px;
-$breakpoint_large: 1200px;
+$breakpoints: (
+  "xs": 400px,
+  "sm": 544px,
+  "md": 768px,
+  "lg": 960px,
+  "xl": 1280px,
+  "xxl": 1440px,
+);
 
-@mixin screen( $type, $size) {
-  @if $size == "small" {
-    @media screen and ($type: $breakpoint_small) {
-      @content;
-    }
-  } @else if $size == "med-small" {
-    @media screen and ($type: $breakpoint_med-small) {
-      @content;
-    }
-  } @else if $size == "med" {
-    @media screen and ($type: $breakpoint_med) {
-      @content;
-    }
-  } @else if $size == "large" {
-    @media screen and ($type: $breakpoint_large) {
+@mixin screen($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint){
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $breakpoint-value){
       @content;
     }
   } @else{
-      @content;
+    @warn 'Invalid breakpoint.'
   }
 }
