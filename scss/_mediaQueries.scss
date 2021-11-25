@@ -1,0 +1,26 @@
+$breakpoint_small: 767px;
+$breakpoint_med-small: 768px;
+$breakpoint_med: 992px;
+$breakpoint_large: 1200px;
+
+@mixin screen( $type, $size) {
+  @if $size == "small" {
+    @media screen and ($type: $breakpoint_small) {
+      @content;
+    }
+  } @else if $size == "med-small" {
+    @media screen and ($type: $breakpoint_med-small) {
+      @content;
+    }
+  } @else if $size == "med" {
+    @media screen and ($type: $breakpoint_med) {
+      @content;
+    }
+  } @else if $size == "large" {
+    @media screen and ($type: $breakpoint_large) {
+      @content;
+    }
+  } @else{
+      @content;
+  }
+}
