@@ -57,9 +57,9 @@
           a {
             width: 100%;
             padding: 0.6em 0.9em;
-            background: linear-gradient(to left, transparent 50%, #f5f5f5 50%)
+            background: linear-gradient(to left, transparent 50%, #f5f5f5bb 50%)
               right;
-            background-size: 200%;
+            background-size: 201%;
             transition: 0.5s ease-out;
             display: flex;
             flex-flow: row nowrap;
@@ -138,10 +138,10 @@
 
 .menu {
   display: block;
-    position: fixed;
-    bottom: 2em;
-    right: 1.6em;
-    z-index: 999;
+  position: fixed;
+  bottom: 2em;
+  right: 1.6em;
+  z-index: 999;
 
   button {
     border: none;
@@ -170,11 +170,10 @@
   }
 
   @include screen(lg) {
-  display: none;
-    
+    display: none;
   }
 }
 
-.show-menu{
+.show-menu {
   left: 0;
 }
