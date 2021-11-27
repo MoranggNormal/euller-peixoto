@@ -11,7 +11,7 @@
   background-color: #f5f8fc;
 
   .main-pic {
-    width: 30%;
+    width: 40%;
     overflow: hidden;
     transition: 0.5s;
     box-shadow: 0 0 80px 120px rgba(19, 19, 19, 0.055);
@@ -20,10 +20,11 @@
 
     img {
       width: 100%;
+      
     }
 
     @include screen(xs){
-      width: 40%;
+      width: 20%;
     }
   }
 
@@ -63,14 +64,13 @@
           padding: 0.2em;
 
           a {
-            font-size: 0.1em;
             
 
             img{
             transition: 0.2s;
 
-              width: 1em;
-              height: 1em;
+              width: 1.3em;
+              height: 1.3em;
 
               &:hover{
                 transform: scale(1.4);

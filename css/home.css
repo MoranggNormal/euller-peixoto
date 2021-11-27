@@ -7,7 +7,7 @@
   align-items: center;
   background-color: #f5f8fc; }
   #home .main-pic {
-    width: 30%;
+    width: 40%;
     overflow: hidden;
     transition: 0.5s;
     box-shadow: 0 0 80px 120px rgba(19, 19, 19, 0.055);
@@ -17,7 +17,7 @@
       width: 100%; }
     @media (min-width: 400px) {
       #home .main-pic {
-        width: 40%; } }
+        width: 20%; } }
   #home h2 {
     color: #1a111a;
     margin-top: 1em;
@@ -47,14 +47,12 @@
         #home .content nav ul li {
           margin-bottom: 0.4em;
           padding: 0.2em; }
-          #home .content nav ul li a {
-            font-size: 0.1em; }
-            #home .content nav ul li a img {
-              transition: 0.2s;
-              width: 1em;
-              height: 1em; }
-              #home .content nav ul li a img:hover {
-                transform: scale(1.4); }
+          #home .content nav ul li a img {
+            transition: 0.2s;
+            width: 1.3em;
+            height: 1.3em; }
+            #home .content nav ul li a img:hover {
+              transform: scale(1.4); }
           #home .content nav ul li:nth-child(4) {
             transform: scale(1.4); }
     #home .content .download-cv {
