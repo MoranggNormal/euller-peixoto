@@ -1,11 +1,13 @@
-@import 'typography';
+@import "mediaQueries";
+@import "typography";
 
 #services {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
   background-color: #f5f8fc;
+  padding-bottom: 5em;
 
   .container {
     width: 90%;
@@ -13,31 +15,114 @@
     display: flex;
     flex-flow: column nowrap;
 
-    .text-area{
-        width: 100%;
+    .text-area {
+      width: 100%;
 
-        h3{
-            color: #1a1a1a;
-            @include title; 
-        }
+      h3 {
+        color: #1a1a1a;
+        @include title;
+      }
 
-        h4{
-            margin-top: 2.5em;
-            @include subtitle;
-        }
+      h4 {
+        margin-top: 2.5em;
+        @include subtitle;
+      }
     }
 
-    .cards{
+    .cards {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1.8em;
+      margin-top: 2.8em;
+
+      .card {
+        width: 95%;
+        height: 15em;
+        border-radius: 0.5em;
+        background-color: #fff;
         display: flex;
+        flex-flow: column wrap;
         justify-content: space-around;
-        gap: 1.8em;
-        margin-top: 2.8em;
+        transition: all .3s ease;
 
-        .card{
-            width: 27%;
-            height: 20em;
-            background-color: #006dfc;
+        .card-item {
+          margin-left: 2.3em;
+          color: #1a1a1a;
+
+          img {
+            width: 3.3em;
+            height: 3.3em;
+          }
+
+          h3 {
+            @include title;
+          }
+
+          &:nth-child(3) {
+            display: flex;
+            @include text-med;
+
+            div {
+              position: relative;
+              width: 13px;
+              height: 2px;
+              background-color: #000000;
+              top: 50%;
+              transform: translateY(-50%);
+              margin-left: 14px;
+              border-radius: 50px;
+              transition: 0.3s;
+
+              &::before {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 2px;
+                background-color: #7e7e7e;
+                transform: rotate(45deg);
+                right: 0px;
+                top: -2px;
+                border-radius: 50px;
+              }
+
+              &::after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 2px;
+                background-color: #7e7e7e;
+                transform: rotate(-45deg);
+                right: 0px;
+                bottom: -2px;
+                border-radius: 50px;
+              }
+            }
+          }
         }
+
+
+        &:hover{
+            filter: invert(1);
+
+            .card-item{
+            &:nth-child(3){
+                div{
+                    width: 23px;
+                }
+            }
+        }
+        }
+
+        @include screen(lg){
+            height: 17em;
+        }
+      }
+
+      @include screen(lg) {
+        flex-flow: row nowrap;
+      }
     }
-}
+  }
 }
