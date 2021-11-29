@@ -36,6 +36,7 @@
       align-items: center;
       gap: 1.8em;
       margin-top: 2.8em;
+      margin-bottom: 2em;
 
       .card {
         width: 95%;
@@ -45,7 +46,7 @@
         display: flex;
         flex-flow: column wrap;
         justify-content: space-around;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
 
         .card-item {
           margin-left: 2.3em;
@@ -102,21 +103,20 @@
           }
         }
 
+        &:hover {
+          filter: invert(1);
 
-        &:hover{
-            filter: invert(1);
-
-            .card-item{
-            &:nth-child(3){
-                div{
-                    width: 23px;
-                }
+          .card-item {
+            &:nth-child(3) {
+              div {
+                width: 23px;
+              }
             }
-        }
+          }
         }
 
-        @include screen(lg){
-            height: 17em;
+        @include screen(lg) {
+          height: 17em;
         }
       }
 

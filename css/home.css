@@ -70,7 +70,8 @@
       transition: 0.3s;
       font-size: 17px;
       font-size: 1.0625rem;
-      font-weight: 500; }
+      font-weight: 500;
+      line-height: 1.38em; }
       #home .content .download-cv:hover {
         background-color: #1a111a;
         color: #aaaaaa;
