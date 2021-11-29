@@ -19,6 +19,7 @@
 
 a{
   text-decoration: none;
+  color: #1a1a1a;
 }
 
 ul, li{
@@ -111,6 +112,12 @@ hr {
   padding: 0;
 }
 
+
+input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
