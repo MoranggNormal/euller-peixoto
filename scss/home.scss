@@ -8,15 +8,14 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: #f5f8fc;
+  background-color: #F9F9FC;
 
   .main-pic {
     width: 40%;
     overflow: hidden;
     transition: 0.5s;
-    box-shadow: 0 0 80px 120px rgba(19, 19, 19, 0.055);
-    border: 1px solid rgba(19, 19, 19, 0.164);
-    border-radius: 40% 30% 22% 64% / 53% 91% 27% 45%;
+    border: 11px solid #e2e2e2;
+    border-radius: 9999px;
 
     img {
       width: 100%;
