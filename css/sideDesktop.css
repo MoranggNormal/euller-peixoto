@@ -60,7 +60,8 @@
               margin-left: 1.6em;
               font-size: 17px;
               font-size: 1.0625rem;
-              font-weight: 500; }
+              font-weight: 500;
+              line-height: 1.38em; }
             .isDesktop nav .container ul li a:hover {
               background-position: left; }
       .isDesktop nav .container .active {
