@@ -5,7 +5,7 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: #F9F9FC; }
+  background-color: #f9f9fc; }
   #home .main-pic {
     width: 40%;
     overflow: hidden;
@@ -13,7 +13,10 @@
     border: 11px solid #e2e2e2;
     border-radius: 9999px; }
     #home .main-pic img {
+      transition: 0.3s ease;
       width: 100%; }
+      #home .main-pic img:hover {
+        transform: scale(1.1); }
     @media (min-width: 400px) {
       #home .main-pic {
         width: 20%; } }
@@ -52,7 +55,7 @@
             height: 1.2em; }
             #home .content nav ul li a img:hover {
               transform: scale(1.4); }
-          #home .content nav ul li:nth-child(-n+3) {
+          #home .content nav ul li:nth-child(-n + 3) {
             border-right: 1px solid #7e7e7e4f; }
           #home .content nav ul li:nth-child(4) {
             transform: scale(1.4); }

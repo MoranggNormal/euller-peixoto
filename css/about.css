@@ -66,7 +66,10 @@
         border-radius: 1.7em;
         overflow: hidden; }
         #about .container .img-area div img {
+          transition: all .3s ease;
           width: 100%; }
+          #about .container .img-area div img:hover {
+            transform: scale(1.1); }
       @media (min-width: 960px) {
         #about .container .img-area {
           display: grid; } }

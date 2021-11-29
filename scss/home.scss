@@ -1,5 +1,5 @@
-@import 'mediaQueries';
-@import 'typography';
+@import "mediaQueries";
+@import "typography";
 
 #home {
   width: 100%;
@@ -8,7 +8,7 @@
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background-color: #F9F9FC;
+  background-color: #f9f9fc;
 
   .main-pic {
     width: 40%;
@@ -18,11 +18,15 @@
     border-radius: 9999px;
 
     img {
+      transition: 0.3s ease;
       width: 100%;
-      
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
-    @include screen(xs){
+    @include screen(xs) {
       width: 20%;
     }
   }
@@ -34,7 +38,6 @@
   }
 
   .content {
-
     width: 100%;
     display: grid;
     place-items: center;
@@ -45,13 +48,12 @@
       margin-top: 0.844em;
       @include subtitle;
 
-    @include screen(xs){
-      max-width: 60%;
-    }
+      @include screen(xs) {
+        max-width: 60%;
+      }
     }
 
     nav {
-      
       margin-top: 3em;
 
       ul {
@@ -64,27 +66,24 @@
           margin-bottom: 1.9em;
 
           a {
-            
-
-            img{
-            transition: 0.2s;
+            img {
+              transition: 0.2s;
 
               width: 1.2em;
               height: 1.2em;
 
-              &:hover{
+              &:hover {
                 transform: scale(1.4);
               }
             }
           }
 
-          &:nth-child(-n+3){
+          &:nth-child(-n + 3) {
             border-right: 1px solid #7e7e7e4f;
           }
 
-          &:nth-child(4){
+          &:nth-child(4) {
             transform: scale(1.4);
-
           }
         }
       }
