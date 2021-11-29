@@ -60,8 +60,8 @@
         gap: 0.455em;
 
         li {
-          margin-bottom: 0.4em;
-          padding: 0.2em;
+          padding: 0 1.2em;
+          margin-bottom: 1.9em;
 
           a {
             
@@ -69,13 +69,17 @@
             img{
             transition: 0.2s;
 
-              width: 1.3em;
-              height: 1.3em;
+              width: 1.2em;
+              height: 1.2em;
 
               &:hover{
                 transform: scale(1.4);
               }
             }
+          }
+
+          &:nth-child(-n+3){
+            border-right: 1px solid #7e7e7e4f;
           }
 
           &:nth-child(4){
