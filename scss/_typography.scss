@@ -14,13 +14,18 @@
 }
 
 @mixin title{
-    @include font-size(27px);
+    @include font-size(58px);
     font-weight: 700;
 }
 
 @mixin subtitle{
     @include font-size(21px);
     font-weight: 400;
+}
+
+@mixin text-lg{
+    @include font-size(26px);
+    font-weight: 700;
 }
 
 @mixin text-med{
