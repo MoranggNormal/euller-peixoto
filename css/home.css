@@ -44,14 +44,16 @@
         display: flex;
         gap: 0.455em; }
         #home .content nav ul li {
-          margin-bottom: 0.4em;
-          padding: 0.2em; }
+          padding: 0 1.2em;
+          margin-bottom: 1.9em; }
           #home .content nav ul li a img {
             transition: 0.2s;
-            width: 1.3em;
-            height: 1.3em; }
+            width: 1.2em;
+            height: 1.2em; }
             #home .content nav ul li a img:hover {
               transform: scale(1.4); }
+          #home .content nav ul li:nth-child(-n+3) {
+            border-right: 1px solid #7e7e7e4f; }
           #home .content nav ul li:nth-child(4) {
             transform: scale(1.4); }
     #home .content .download-cv {
