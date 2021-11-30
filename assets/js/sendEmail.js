@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 const emailjs = require('emailjs-com')
 
 emailjs.init("user_jNBh3414Iz9HJlwjPGryn");
-=======
-import { init, send } from "../../node_modules/emailjs-com";
-init("user_jNBh3414Iz9HJlwjPGryn");
->>>>>>> main
 
 const form = document.querySelector(".contact-form");
 const recruiterEmail = document.querySelector(".recruiter-email");
