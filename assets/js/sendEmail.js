@@ -1,6 +1,22 @@
+<<<<<<< Updated upstream
 const emailjs = require('emailjs-com')
 
 emailjs.init("user_jNBh3414Iz9HJlwjPGryn");
+=======
+<<<<<<< HEAD
+import { init, send } from "emailjs-com";
+init("user_jNBh3414Iz9HJlwjPGryn");
+=======
+<<<<<<< HEAD
+const emailjs = require('emailjs-com')
+
+emailjs.init("user_jNBh3414Iz9HJlwjPGryn");
+=======
+import { init, send } from "../../node_modules/emailjs-com";
+init("user_jNBh3414Iz9HJlwjPGryn");
+>>>>>>> main
+>>>>>>> parent of f90a2d2... emailjs
+>>>>>>> Stashed changes
 
 const form = document.querySelector(".contact-form");
 const recruiterEmail = document.querySelector(".recruiter-email");
