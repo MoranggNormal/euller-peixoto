@@ -1,4 +1,4 @@
-import { init, send } from "emailjs-com";
+import { init, send } from "../../node_modules/emailjs-com";
 init("user_jNBh3414Iz9HJlwjPGryn");
 
 const form = document.querySelector(".contact-form");
