@@ -553,8 +553,9 @@
               <br />
 
               <span class="contact-message-error">Please, fill all boxes.</span>
-              <span class="contact-message-sucess">Thanks, i'll return ASAP.</span>
-
+              <span class="contact-message-sucess"
+                >Thanks, i'll return ASAP.</span
+              >
 
               <button type="submit" class="send-button">Send</button>
             </form>
@@ -563,15 +564,17 @@
       </section>
     </main>
 
-
     <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/cursorEffect.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script type="module" src="assets/js/sendEmail.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
 
-    <script>
+    <script type="text/javascript">
       AOS.init();
 
       var swiper = new Swiper(".mySwiper", {
@@ -594,6 +597,46 @@
             spaceBetween: 10,
           },
         },
+      });
+
+      // e-mailJs
+
+      emailjs.init("user_jNBh3414Iz9HJlwjPGryn");
+
+      const form = document.querySelector(".contact-form");
+      const recruiterEmail = document.querySelector(".recruiter-email");
+      const recruiterMessage = document.querySelector(".recruiter-message");
+      const setError = document.querySelector(".contact-message-error");
+      const setSucess = document.querySelector(".contact-message-sucess");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        if (
+          recruiterEmail.value.length != 0 &&
+          recruiterMessage.value.length != 0
+        ) {
+          emailjs.send("service_r10u1x6", "template_tbvsjp6", {
+            from_name: recruiterEmail.value,
+            to_name: "Euller",
+            message: recruiterMessage.value,
+            reply_to: "euller",
+          });
+
+          setSucess.style.display = "block";
+
+          recruiterEmail.value = "";
+          recruiterMessage.value = "";
+          setError.style.display = "none";
+
+          setTimeout(() => {
+            setSucess.style.display = "none";
+          }, 2000);
+
+          return;
+        }
+
+        setError.style.display = "block";
       });
     </script>
   </body>
