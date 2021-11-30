@@ -1,5 +1,6 @@
-import { init, send } from "emailjs-com";
-init("user_jNBh3414Iz9HJlwjPGryn");
+const emailjs = require('emailjs-com')
+
+emailjs.init("user_jNBh3414Iz9HJlwjPGryn");
 
 const form = document.querySelector(".contact-form");
 const recruiterEmail = document.querySelector(".recruiter-email");
@@ -12,7 +13,7 @@ form.addEventListener("submit", (e) => {
 
   if (recruiterEmail.value.length != 0 && recruiterMessage.value.length != 0) {
 
-    send("service_r10u1x6", "template_tbvsjp6", {
+    emailjs.send("service_r10u1x6", "template_tbvsjp6", {
       from_name: recruiterEmail.value,
       to_name: "Euller",
       message: recruiterMessage.value,
