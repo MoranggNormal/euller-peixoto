@@ -47,7 +47,7 @@
       max-width: 85%;
       line-height: 1.253em;
       margin-top: 0.844em;
-      @include subtitle;
+      @include text-med;
 
       @include screen(xs) {
         max-width: 60%;
