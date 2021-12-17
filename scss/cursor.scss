@@ -25,7 +25,9 @@
 }
 
 .cursor-follow, .cursor-main{
-  @include screen(xs){
-    display: none;
+  display: none;
+
+  @include screen(xl){
+    display: block;
   }
 }
