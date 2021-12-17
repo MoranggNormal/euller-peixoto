@@ -20,7 +20,7 @@ window.onscroll = () => {
   });
 };
 
-const menu = document.querySelector('.isDesktop')
+const menu = document.querySelector('.Menu')
 const toggleMenu = document.querySelector('.toggle-menu')
 
 toggleMenu.addEventListener('click', () => {
