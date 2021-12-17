@@ -12,7 +12,7 @@
     margin-top: 0.9em;
     display: flex;
     flex-flow: row nowrap;
-    padding: 4em 2em;
+    padding: 1em 2em;
 
     .text-area {
       width: 100%;
@@ -43,7 +43,7 @@
         }
 
         @include screen(xs) {
-          margin: 1em 0;
+          margin: 0.5em 0;
         }
       }
 
