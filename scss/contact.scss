@@ -58,7 +58,7 @@
           a {
             text-decoration: underline;
 
-            
+
           }
 
             iframe{
@@ -76,6 +76,10 @@
         }
          
         
+      }
+
+      .card-dark:hover{
+        filter: invert(1);
       }
 
       @include screen(lg) {
