@@ -28,6 +28,7 @@ ul, li{
 
 html {
   color: #7e7e7e;
+  font-size: 14px;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
