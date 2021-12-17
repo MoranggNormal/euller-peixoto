@@ -43,17 +43,18 @@
         }
 
         @include screen(xs) {
-          margin: 2em 0;
+          margin: 1em 0;
         }
       }
 
       .skills {
         width: 100%;
-        display: flex;
 
         ul {
           list-style: none;
-          width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
 
           li {
             font-weight: 400;
@@ -171,7 +172,7 @@
 
           @include screen(md) {
             margin-top: 1.1em;
-            width: 50%;
+            width: 100%;
           }
         }
 
@@ -188,9 +189,7 @@
 
       
 
-      @include screen(xl) {
-        width: 50%;
-      }
+      
     }
 
     .img-area {
