@@ -41,7 +41,7 @@
       .card {
         width: 95%;
         height: 13em;
-        border-radius: 0.1em;
+        border-radius: 0.2em;
         background-color: #fff;
         display: flex;
         flex-flow: column wrap;
@@ -63,6 +63,11 @@
           address {
             font-style: normal;
           }
+
+        }
+
+        &:hover{
+          filter: invert(1);
         }
 
       }
@@ -145,6 +150,10 @@
             filter: invert(1);
           }
         }
+      }
+
+      &:hover{
+        filter: invert(1);
       }
     }
   }
