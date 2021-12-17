@@ -13,11 +13,18 @@ document.addEventListener("mousemove", (e) => {
   mainCursor.style.left = x + "px";
 
   if (e.target.className.includes('hoverable')) {
-      mainCursor.style.width = '3.9em'
-      mainCursor.style.height = '3.9em'
+      mainCursor.style.width = '4.9em'
+      mainCursor.style.height = '4.9em'
+
+      followCursor.style.width = '1em'
+      followCursor.style.height = '1em'
+
   }else{
       mainCursor.style.width = '2.9em'
       mainCursor.style.height = '2.9em'
+
+      followCursor.style.width = '0.5em'
+      followCursor.style.height = '0.5em'
   }
 
 });
