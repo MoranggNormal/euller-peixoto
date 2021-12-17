@@ -27,6 +27,10 @@
       }
     }
 
+    @include screen(md) {
+      width: 29%;
+    }
+
     @include screen(lg) {
       width: 20%;
     }
