@@ -11,7 +11,7 @@
   background-color: #f9f9fc;
 
   .main-pic {
-    width: 40%;
+    width: 30%;
     overflow: hidden;
     transition: 0.5s;
     border: 9px solid #e2e2e2a6;
@@ -27,10 +27,9 @@
       }
     }
 
-    @include screen(md) {
+    @include screen(xs) {
       width: 29%;
     }
-
     @include screen(lg) {
       width: 20%;
     }
@@ -55,6 +54,14 @@
 
       @include screen(xs) {
         max-width: 85%;
+      }
+
+      @include screen(lg) {
+        max-width: 65%;
+      }
+
+      @include screen(xl) {
+        max-width: 50%;
       }
     }
 
@@ -113,9 +120,12 @@
       }
 
       @include screen(xs) {
-      padding: 0.3em 1.7em;
-
+        padding: 0.3em 1.7em;
         @include text;
+      }
+
+      @include screen(xxl) {
+        padding: 0.6em 2.4em;
       }
     }
   }
