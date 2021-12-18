@@ -329,3 +329,10 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
+button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
