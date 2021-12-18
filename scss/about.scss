@@ -1,5 +1,6 @@
 @import "mediaQueries";
 @import "typography";
+@import "boxShadow";
 
 #about {
   width: 100%;
@@ -9,7 +10,6 @@
   padding-bottom: 4em;
 
   .container {
- 
     width: 90%;
     height: 90%;
     margin-top: 0.9em;
@@ -32,20 +32,17 @@
         h4 {
           color: #1a1a1a;
           @include subtitle;
-
-          
         }
 
-        small, p {
+        small,
+        p {
           font-weight: 300;
           margin-top: 0.6em;
           @include text;
 
-          @include screen(xl){
+          @include screen(xl) {
             max-width: 85%;
-
           }
-         
         }
 
         @include screen(xs) {
@@ -58,121 +55,112 @@
 
         ul {
           list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
 
           li {
             font-weight: 400;
             color: #1a1a1a;
             margin: 0.3em;
-            
 
-            .skill-item{
+            .skill-item {
               border: 1px solid #f5f5f5;
-              border-radius: .2em;
+              border-radius: 0.2em;
               padding: 0.2em 0.2em;
-              
-              
 
-              div{
+              div {
                 width: 100%;
                 background-color: #f5f5f5de;
-                border-radius: .2em;
+                border-radius: 0.2em;
                 padding: 0.2em 0.6em;
                 color: #7e7e7e;
                 display: flex;
                 align-items: center;
                 position: relative;
 
-                img{
+                img {
                   width: 1.2em;
                   height: 1.2em;
                   margin-right: 0.4em;
                   z-index: 40;
-
                 }
 
-                p{
+                p {
                   @include text;
                   z-index: 40;
                 }
-
-
               }
 
-              .skill-box:hover{
+              .skill-box:hover {
                 filter: brightness(0.9);
                 transition: 0.2s;
-
               }
 
-              .skill-box::after{
-                content: '';
+              .skill-box::after {
+                content: "";
                 top: 0;
                 left: 0;
                 position: absolute;
                 background-color: #dddddd48;
                 height: 100%;
 
-                &:hover{
-                background-color: #ddddddbb;
-                  
+                &:hover {
+                  background-color: #ddddddbb;
                 }
               }
 
-              .skill-html::after{
+              .skill-html::after {
                 width: 95%;
               }
 
-              .skill-css::after{
+              .skill-css::after {
                 width: 90%;
               }
 
-              .skill-javascript::after{
+              .skill-javascript::after {
                 width: 80%;
               }
 
-              .skill-sass::after{
+              .skill-sass::after {
                 width: 85%;
               }
 
-              .skill-materialUi::after{
+              .skill-materialUi::after {
                 width: 60%;
               }
 
-              .skill-styled::after{
+              .skill-styled::after {
                 width: 85%;
               }
 
-              .skill-typescript::after{
+              .skill-typescript::after {
                 width: 35%;
               }
 
-              .skill-react::after{
+              .skill-react::after {
                 width: 75%;
               }
 
-              .skill-reactRouter::after{
+              .skill-reactRouter::after {
                 width: 85%;
               }
 
-              .skill-jest::after{
+              .skill-jest::after {
                 width: 33%;
               }
 
-              .skill-next::after{
+              .skill-next::after {
                 width: 75%;
               }
 
-              .skill-firebase::after{
+              .skill-firebase::after {
                 width: 55%;
               }
 
-              .skill-git::after{
+              .skill-git::after {
                 width: 85%;
               }
-              
             }
           }
 
@@ -186,8 +174,6 @@
           }
         }
 
-        
-
         @include screen(xs) {
           flex-flow: column wrap;
         }
@@ -196,10 +182,6 @@
           flex-flow: row wrap;
         }
       }
-
-      
-
-      
     }
 
     .img-area {
@@ -209,25 +191,20 @@
       place-items: center;
 
       div {
-          margin-top: 40%;
-          border-radius: .2em;
+        margin-top: 40%;
+        border-radius: 0.2em;
         overflow: hidden;
-       
+
         img {
-          transition: all .3s ease;
+          transition: all 0.3s ease;
           width: 100%;
           height: 100%;
           &:hover {
             transform: scale(1.1);
-          }   
-
-          
+          }
         }
-
-      
       }
 
-   
       @include screen(xl) {
         display: grid;
       }
