@@ -1,239 +1,174 @@
 @import "mediaQueries";
 @import "typography";
-
 #about {
-  width: 100%;
-  min-height: 100vh;
-
-  .container {
- 
     width: 100%;
-    height: 100%;
-    margin-top: 0.9em;
-    display: flex;
-    flex-flow: row nowrap;
-    padding: 1em 2em;
-
-    .text-area {
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-
-      h3 {
-        color: #1a1a1a;
-        @include title;
-      }
-
-      .infos {
-        h4 {
-          color: #1a1a1a;
-          @include subtitle;
-          margin-top: 0.6em;
-
-          
-        }
-
-        p {
-          font-weight: 300;
-          @include text;
-          margin-top: 0.6em;
-
-         
-        }
-
-        @include screen(xs) {
-          margin: 0.5em 0;
-        }
-      }
-
-      .skills {
+    min-height: 100vh;
+    .container {
         width: 100%;
-
-        ul {
-          list-style: none;
+        height: 100%;
+        margin-top: 0.9em;
         display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-
-          li {
-            font-weight: 400;
-            color: #1a1a1a;
-            margin: 1em;
-            
-
-            .skill-item{
-              border: 1px solid #f5f5f5;
-              border-radius: .2em;
-              padding: 0.2em 0.2em;
-              
-              
-
-              div{
-                width: 100%;
-                background-color: #f5f5f5de;
-                border-radius: .2em;
-                padding: 0.2em 0.6em;
-                color: #7e7e7e;
-                display: flex;
-                align-items: center;
-                position: relative;
-
-                img{
-                  width: 1.2em;
-                  height: 1.2em;
-                  margin-right: 0.4em;
-                  z-index: 40;
-
-                }
-
-                p{
-                  @include text;
-                  z-index: 40;
-                }
-
-
-              }
-
-              .skill-box:hover{
-                filter: brightness(0.9);
-                transition: 0.2s;
-
-              }
-
-              .skill-box::after{
-                content: '';
-                top: 0;
-                left: 0;
-                position: absolute;
-                background-color: #dddddd48;
-                height: 100%;
-
-                &:hover{
-                background-color: #ddddddbb;
-                  
-                }
-              }
-
-              .skill-html::after{
-                width: 95%;
-              }
-
-              .skill-css::after{
-                width: 90%;
-              }
-
-              .skill-javascript::after{
-                width: 80%;
-              }
-
-              .skill-sass::after{
-                width: 85%;
-              }
-
-              .skill-materialUi::after{
-                width: 60%;
-              }
-
-              .skill-styled::after{
-                width: 85%;
-              }
-
-              .skill-typescript::after{
-                width: 35%;
-              }
-
-              .skill-react::after{
-                width: 75%;
-              }
-
-              .skill-reactRouter::after{
-                width: 85%;
-              }
-
-              .skill-jest::after{
-                width: 33%;
-              }
-
-              .skill-next::after{
-                width: 75%;
-              }
-
-              .skill-firebase::after{
-                width: 55%;
-              }
-
-              .skill-git::after{
-                width: 85%;
-              }
-              
+        flex-flow: row nowrap;
+        padding: 1em 2em;
+        .text-area {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            h3 {
+                color: #1a1a1a;
+                @include title;
             }
-          }
-
-          @include screen(xs) {
-            width: 100%;
-          }
-
-          @include screen(md) {
-            margin-top: 1.1em;
-            width: 100%;
-          }
+            .infos {
+                h4 {
+                    color: #1a1a1a;
+                    @include subtitle;
+                    margin-top: 0.6em;
+                }
+                p {
+                    font-weight: 300;
+                    @include text;
+                    margin-top: 0.6em;
+                }
+                @include screen(xs) {
+                    margin: 0.5em 0;
+                }
+            }
+            .skills {
+                width: 100%;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 100%;
+                    li {
+                        font-weight: 400;
+                        color: #1a1a1a;
+                        margin: 1em;
+                        .skill-item {
+                            border: 1px solid #f5f5f5;
+                            border-radius: .2em;
+                            padding: 0.2em 0.2em;
+                            div {
+                                width: 100%;
+                                background-color: #f5f5f5de;
+                                border-radius: .2em;
+                                padding: 0.2em 0.6em;
+                                color: #7e7e7e;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                img {
+                                    width: 1.2em;
+                                    height: 1.2em;
+                                    margin-right: 0.4em;
+                                    z-index: 40;
+                                }
+                                p {
+                                    @include text;
+                                    z-index: 40;
+                                }
+                            }
+                            .skill-box:hover {
+                                filter: brightness(0.9);
+                                transition: 0.2s;
+                            }
+                            .skill-box::after {
+                                content: '';
+                                top: 0;
+                                left: 0;
+                                position: absolute;
+                                background-color: #dddddd48;
+                                height: 100%;
+                                &:hover {
+                                    background-color: #ddddddbb;
+                                }
+                            }
+                            .skill-html::after {
+                                width: 95%;
+                            }
+                            .skill-css::after {
+                                width: 90%;
+                            }
+                            .skill-javascript::after {
+                                width: 80%;
+                            }
+                            .skill-sass::after {
+                                width: 85%;
+                            }
+                            .skill-materialUi::after {
+                                width: 60%;
+                            }
+                            .skill-styled::after {
+                                width: 85%;
+                            }
+                            .skill-typescript::after {
+                                width: 35%;
+                            }
+                            .skill-react::after {
+                                width: 75%;
+                            }
+                            .skill-reactRouter::after {
+                                width: 85%;
+                            }
+                            .skill-jest::after {
+                                width: 33%;
+                            }
+                            .skill-next::after {
+                                width: 75%;
+                            }
+                            .skill-firebase::after {
+                                width: 55%;
+                            }
+                            .skill-git::after {
+                                width: 85%;
+                            }
+                        }
+                    }
+                    @include screen(xs) {
+                        width: 100%;
+                    }
+                    @include screen(md) {
+                        margin-top: 1.1em;
+                        width: 100%;
+                    }
+                }
+                @include screen(xs) {
+                    flex-flow: column wrap;
+                }
+                @include screen(md) {
+                    flex-flow: row wrap;
+                }
+            }
         }
-
-        
-
+        .img-area {
+            width: 50%;
+            height: 100%;
+            display: none;
+            place-items: center;
+            div {
+                margin-top: 40%;
+                border-radius: .2em;
+                overflow: hidden;
+                img {
+                    transition: all .3s ease;
+                    width: 100%;
+                    height: 100%;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            @include screen(xl) {
+                display: grid;
+            }
+        }
         @include screen(xs) {
-          flex-flow: column wrap;
+            height: auto;
         }
-
-        @include screen(md) {
-          flex-flow: row wrap;
+        @include screen(lg) {
+            width: 90%;
+            height: 90%;
         }
-      }
-
-      
-
-      
     }
-
-    .img-area {
-      width: 50%;
-      height: 100%;
-      display: none;
-      place-items: center;
-
-      div {
-          margin-top: 40%;
-          border-radius: .2em;
-        overflow: hidden;
-       
-        img {
-          transition: all .3s ease;
-          width: 100%;
-          height: 100%;
-          &:hover {
-            transform: scale(1.1);
-          }   
-
-          
-        }
-
-      
-      }
-
-   
-      @include screen(xl) {
-        display: grid;
-      }
-    }
-
-    @include screen(xs) {
-      height: auto;
-    }
-
-    @include screen(lg) {
-      width: 90%;
-      height: 90%;
-    }
-  }
 }

@@ -1,20 +1,20 @@
 {
-  "name": "EullerPeixoto",
-  "version": "0.0.1",
-  "author": "Euller Peixoto",
-  "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive --output-style compressed"
-  },
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "2.4.1"
-  },
-  "dependencies": {
-    "emailjs-com": "^3.2.0"
-  }
+    "name": "EullerPeixoto",
+    "version": "0.0.1",
+    "author": "Euller Peixoto",
+    "scripts": {
+        "build": "parcel build index.html",
+        "dev": "parcel index.html --open",
+        "start": "npm run build && npm run dev",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "node-sass -w scss/ -o css/ --recursive --output-style compressed"
+    },
+    "devDependencies": {
+        "node-sass": "^6.0.1",
+        "parcel-bundler": "^1.12.4",
+        "prettier": "2.4.1"
+    },
+    "dependencies": {
+        "emailjs-com": "^3.2.0"
+    }
 }
