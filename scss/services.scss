@@ -136,9 +136,12 @@
 
   transition: all 0.5s ease-out;
 
-  div {
+  > div {
     width: 90%;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @include screen(xl) {
       width: 50%;
@@ -169,6 +172,26 @@
         transform: scale(1.1);
         background-color: rgba(0, 0, 0, 0.25);
         box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .text {
+      max-width: 80%;
+      padding: 2em 1.5em;
+
+      h4 {
+        color: #1a1a1a;
+        @include text-lg;
+      }
+
+      small {
+        @include text;
+      }
+
+      p {
+        margin-top: 1em;
+        @include text-med;
+        font-weight: 500;
       }
     }
   }
