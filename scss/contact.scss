@@ -25,7 +25,7 @@
         @include subtitle;
       }
 
-      small{
+      small {
         @include text-med;
       }
     }
@@ -99,12 +99,13 @@
         display: grid;
         text-align: left;
         margin-top: 2em;
+
         input {
           border-bottom: 1px solid #1a1a1a;
-          padding: 0 0 1.4em 0;
           overflow: auto;
           @include text-med;
         }
+
         textarea {
           border: none;
           outline: none;
@@ -114,16 +115,19 @@
           margin-top: 1.3em;
           @include text-med;
         }
+
         .contact-message-error {
           color: rgb(230, 36, 36);
           transition: 0.3s;
           display: none;
         }
+
         .contact-message-sucess {
           color: rgb(55, 214, 55);
           transition: 0.3s;
           display: none;
         }
+
         button {
           border: 1px solid #1a1a1a;
           background-color: #fff;
@@ -137,9 +141,7 @@
           }
         }
       }
-      &:hover {
-        filter: invert(1);
-      }
+     
     }
   }
 }
