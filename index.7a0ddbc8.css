@@ -1,0 +1,2 @@
+.cursor-follow{z-index:999;width:.5em;height:.5em;pointer-events:none;background:#1a1a1ab7;border-radius:50%;position:fixed;transform:translate(-50%,-50%)}.cursor-main{z-index:999;opacity:.3;pointer-events:none;background:#9e9d9d;border-radius:50%;transition:all .3s;position:fixed;transform:translate(-50%,-50%);box-shadow:0 0 10px #9e9d9d,0 0 60px #9e9d9d,0 0 15px #9e9d9d}.cursor-follow,.cursor-main{display:none}@media (min-width:1280px){.cursor-follow,.cursor-main{display:block}}
+/*# sourceMappingURL=index.7a0ddbc8.css.map */

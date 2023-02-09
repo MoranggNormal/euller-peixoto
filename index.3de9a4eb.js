@@ -1,0 +1,2 @@
+const button1=document.querySelector(".close-modal-1"),button2=document.querySelector(".close-modal-2"),button3=document.querySelector(".close-modal-3");button1.addEventListener("click",(t=>{t.target.parentNode.parentNode.style.top="-200vw"})),button2.addEventListener("click",(t=>{t.target.parentNode.parentNode.style.top="-200vw"})),button3.addEventListener("click",(t=>{t.target.parentNode.parentNode.style.top="-200vw"}));
+//# sourceMappingURL=index.3de9a4eb.js.map

@@ -1,0 +1,2 @@
+!function(){let e;const n=function(){},o=["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","markTimeline","profile","profileEnd","table","time","timeEnd","timeline","timelineEnd","timeStamp","trace","warn"];let{length:i}=o;const t=window.console=window.console||{};for(;i--;)e=o[i],t[e]||(t[e]=n)}();
+//# sourceMappingURL=index.b1c2b97e.js.map

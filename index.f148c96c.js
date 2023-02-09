@@ -1,0 +1,2 @@
+const card=document.querySelectorAll(".card-modal-open"),modal1=document.querySelector(".open-modal-1"),modal2=document.querySelector(".open-modal-2"),modal3=document.querySelector(".open-modal-3");for(let e=0;e<card.length;e++)card[e].addEventListener("click",(()=>{switch(card[e]){case card[0]:modal1.style.top="50%";break;case card[1]:modal2.style.top="50%";break;case card[2]:modal3.style.top="50%"}}));
+//# sourceMappingURL=index.f148c96c.js.map
